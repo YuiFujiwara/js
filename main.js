@@ -1,18 +1,9 @@
 'use script';
 
-const score = 65;
-const name = 'taguchi';
+// for
 
-// && なおかつ (AND)
-// || もしくは (OR)
-// ! 〜ではない (NOT)
-
-// if (score >= 50) {
-//   if(name ==='taguchi'){
-//     console.log('Good job!');
-//   }
-// }
-
-if (score >= 50 && name === 'taguchi') {
-  console.log('Good job!');
-   }
+for (let i = 1; i<= 10; i++) {
+  // console.log('hello');
+  // console.log(i + 'hello');
+  console.log(`${i} hello`);
+}
