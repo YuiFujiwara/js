@@ -1,14 +1,16 @@
 'use script';
 
 // 定数 const
-// 変数 let 
+// 変数 let
 
-let price = 150;
+let price = 500;
 
-console.log(price * 140);
-console.log(price * 160);
+price += 100; // 600
 
-price = 170;
+price *=2; //1200
 
-console.log(price * 140);
-console.log(price * 160);
+price++; // price +=1 ; =1201
+
+price--; // price -=1 ; =1200
+
+console.log(price);
