@@ -1,10 +1,15 @@
 'use script';
 
 {
- // window.alert('hello');
- // alert('hello');
+  let i =0;
+  const showTime = () => {
+    console.log(new Date());
+    i++;
+    if (i > 2){
+      clearInterval(timeId);
+    }
+  };
 
- const answer = confirm('Are you sure?');
- console.log(answer);
- 
+  let timeId = setInterval(showTime,1000);
+
 }
