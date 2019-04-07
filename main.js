@@ -1,29 +1,14 @@
 'use script';
 
 {
-  class Player { //親クラス
-    constructor(name, score) { //メソッド
-      this.name = name;
-      this.score = score;
-    }
-    showInfo() {
-      console.log(`name: ${this.name} score: ${this.score}`);
-    }
-  }
+//配列
 
-  class SoccerPlayer extends Player { //子クラスタ
-    constructor(name, score, number) {
-     super(name,score);
-     this.number = number;
-  }
-  kick() {
-    console.log('Goooaaal!');
-  }
-}
+ const a = [1, 5, 10];
+ a.splice(2, 0, 6, 7);
+ console.log(a)
 
-  const tsubasa = new SoccerPlayer('tsubasa', 99, 10);
+ const removed = a.splice(1, 2);
+ console.log(a);
+ console.log(removed);
 
-  tsubasa.kick();
-  console.log(tsubasa.number);
-  tsubasa.showInfo();
 }
