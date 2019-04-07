@@ -1,19 +1,10 @@
 'use script';
 
 {
-//配列
+ // window.alert('hello');
+ // alert('hello');
 
- const a = [1, 2, 5, 10];
-
-// const b = [];
-// a.forEach(item => {
-//    b.push(item * 2);
-//  });
-//  console.log(b);
-
-// const b = a.map(item => item * 2);
-// console.log(b);
-
- const b = a.filter(item => item % 2 === 0);
- console.log(b);
+ const answer = confirm('Are you sure?');
+ console.log(answer);
+ 
 }
