@@ -1,15 +1,16 @@
 'use script';
 
 {
-  let i =0;
+  let i = 0;
   const showTime = () => {
     console.log(new Date());
+    let timerId = setTimeout(showTime,1000);
     i++;
-    if (i > 2){
-      clearInterval(timeId);
+    if (i > 2) {
+      clearTimeout(timerId);
     }
   };
 
-  let timeId = setInterval(showTime,1000);
+    showTime();
 
 }
