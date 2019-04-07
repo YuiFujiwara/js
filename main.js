@@ -1,16 +1,15 @@
 'use script';
 
-//関数
+{
+//Scope
 
-function sum(a,b,c){
-  // console.log(a + b + c);
-  return a + b + c
+  const x = 2;
+
+  function f() {
+    // const x = 1;
+    console.log(x);
+  }
+
+  f();
+  console.log(x);
 }
-
-// sum(1, 2, 3);
-// sum(3, 4, 5);
-
-const total = sum(1,2,3) + sum(3, 4, 5);
-// const total = 6 + 12; //18
-
-console.log(total);
