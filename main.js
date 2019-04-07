@@ -1,16 +1,18 @@
 'use script';
 
-// 定数 const
-// 変数 let
+const score = 65;
+const name = 'taguchi';
 
-let price = 500;
+// && なおかつ (AND)
+// || もしくは (OR)
+// ! 〜ではない (NOT)
 
-price += 100; // 600
+// if (score >= 50) {
+//   if(name ==='taguchi'){
+//     console.log('Good job!');
+//   }
+// }
 
-price *=2; //1200
-
-price++; // price +=1 ; =1201
-
-price--; // price -=1 ; =1200
-
-console.log(price);
+if (score >= 50 && name === 'taguchi') {
+  console.log('Good job!');
+   }
