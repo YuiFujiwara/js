@@ -1,13 +1,13 @@
 'use script';
 
 {
-  // const a = 'hello';
-  const a = 5;
+  const ul = document.querySelector('ul');
 
-try {
-  console.log(a.toUpperCase());
-} catch (e) {
-  console.log(e.message);
-}
-  console.log('Finish!');
+  // console.log(ul.parentNode); //body
+  // console.log(ul.children); //li
+  // console.log(ul.children[0]);
+
+  for (let i = 0; i < ul.children.length; i++) {
+    console.log(ul.children[i].textContent);
+  }
 }
