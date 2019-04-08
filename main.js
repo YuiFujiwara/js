@@ -1,13 +1,15 @@
 'use script';
 
 {
-  const ul = document.querySelector('ul');
+const h1 = document.createElement('h1');
+h1.textContent = 'Title';
+document.body.appendChild(h1);
 
-  // console.log(ul.parentNode); //body
-  // console.log(ul.children); //li
-  // console.log(ul.children[0]);
+const p = document.createElement('p');
+p.textContent = 'Hello, hello, hello...';
+document.body.appendChild(p);
 
-  for (let i = 0; i < ul.children.length; i++) {
-    console.log(ul.children[i].textContent);
-  }
+const h2 = document.createElement('h2');
+h2.textContent = 'Sub Title';
+document.body.insertBefore(h2,p);
 }
